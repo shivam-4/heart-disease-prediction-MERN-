@@ -1,8 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { spawn } = require('child_process');
+const cors = require('cors'); // Import cors package
 
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
+
+// Parse JSON request bodies
 app.use(bodyParser.json());
 
 // Column names based on the model's feature names
