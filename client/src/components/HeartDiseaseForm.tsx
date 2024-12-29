@@ -37,7 +37,7 @@ export default function HeartDiseaseForm() {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/predict', {
+      const response = await fetch('https://heart-disease-prediction-mern.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
